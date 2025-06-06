@@ -72,8 +72,9 @@
     </div>
     <div class="submenu" id="submenu1">
         <a href="#" onclick="mostrarDocumento('Manual%20SIGCMA%20CSDJ-CONTRUC%20V9.pdf'); return false;">📄 Manual SIGCMA CSDJ-CONTRUC V9</a>
-    </div>
+          </div>
 
+    <!-- Los demás 16 ítems -->
     <div class="menu-item" onclick="toggleSubmenu('submenu2', this)">2. Contexto <i class="bi bi-chevron-right"></i></div>
     <div class="submenu" id="submenu2"><a href="#" target="_blank">📄 Documento 1</a></div>
 
@@ -124,15 +125,15 @@
 
 </div>
 
-<!-- Contenido principal dentro de un div que reemplazamos -->
-<div id="contenidoPrincipal" class="container-fluid mt-4">
+<!-- Contenido principal centrado y justificado -->
+<div id="contenidoPrincipal" class="container-fluid mt-4 text-center">
 
     <img src="calidad.png"
-         alt="Justicia" class="img-fluid rounded shadow mb-4" style="max-width: 300px;">
+         alt="Justicia" class="img-fluid rounded shadow mb-4" style="max-width: 300px; display: block; margin-left: auto; margin-right: auto;">
 
     <h2 class="text-primary mb-3">Calidad Judicial al Servicio de la Comunidad</h2>
 
-    <div style="text-align: justify; font-size: 1.1em; color: #333;">
+    <div style="max-width: 900px; margin: 0 auto; text-align: justify; font-size: 1.1em; color: #333;">
         <p>
             En el <strong>Centro de Servicios de Control de Garantías de Buga</strong>, la calidad no es un objetivo, es un compromiso constante con la justicia y con cada ciudadano que confía en nuestro sistema judicial.
         </p>
@@ -169,3 +170,4 @@
 
 </body>
 </html>
+
