@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Menú Lateral Bonito Enumerado - CSSPA BUGA</title>
+    <title>Portal CSSPA BUGA - Menú de Calidad</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
     <style>
@@ -18,7 +18,7 @@
             position: fixed;
             top: 0;
             left: 0;
-            background-color: #003F75; /* Color corporativo */
+            background-color: #003F75;
             padding-top: 10px;
             overflow-y: auto;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
@@ -64,137 +64,86 @@
 </head>
 <body>
 
-<!-- Menú lateral bonito enumerado -->
+<!-- Menú lateral -->
 <div class="sidenav">
 
     <div class="menu-item" onclick="toggleSubmenu('submenu1', this)">
         1. Manual de Calidad <i class="bi bi-chevron-right"></i>
     </div>
     <div class="submenu" id="submenu1">
-        <a href="#" target="_blank">📄 Documento 1</a>
+        <a href="#" onclick="mostrarDocumento('Manual%20SIGCMA%20CSDJ-CONTRUC%20V9.pdf'); return false;">📄 Manual SIGCMA CSDJ-CONTRUC V9</a>
     </div>
 
-    <div class="menu-item" onclick="toggleSubmenu('submenu2', this)">
-        2. Contexto <i class="bi bi-chevron-right"></i>
-    </div>
-    <div class="submenu" id="submenu2">
-        <a href="#" target="_blank">📄 Documento 1</a>
-    </div>
+    <div class="menu-item" onclick="toggleSubmenu('submenu2', this)">2. Contexto <i class="bi bi-chevron-right"></i></div>
+    <div class="submenu" id="submenu2"><a href="#" target="_blank">📄 Documento 1</a></div>
 
-    <div class="menu-item" onclick="toggleSubmenu('submenu3', this)">
-        3. Mapa de Procesos <i class="bi bi-chevron-right"></i>
-    </div>
-    <div class="submenu" id="submenu3">
-        <a href="#" target="_blank">📄 Documento 1</a>
-    </div>
+    <div class="menu-item" onclick="toggleSubmenu('submenu3', this)">3. Mapa de Procesos <i class="bi bi-chevron-right"></i></div>
+    <div class="submenu" id="submenu3"><a href="#" target="_blank">📄 Documento 1</a></div>
 
-    <div class="menu-item" onclick="toggleSubmenu('submenu4', this)">
-        4. Caracterizaciones y Procedimientos <i class="bi bi-chevron-right"></i>
-    </div>
-    <div class="submenu" id="submenu4">
-        <a href="#" target="_blank">📄 Documento 1</a>
-    </div>
+    <div class="menu-item" onclick="toggleSubmenu('submenu4', this)">4. Caracterizaciones y Procedimientos <i class="bi bi-chevron-right"></i></div>
+    <div class="submenu" id="submenu4"><a href="#" target="_blank">📄 Documento 1</a></div>
 
-    <div class="menu-item" onclick="toggleSubmenu('submenu5', this)">
-        5. Salidas No Conformes <i class="bi bi-chevron-right"></i>
-    </div>
-    <div class="submenu" id="submenu5">
-        <a href="#" target="_blank">📄 Documento 1</a>
-    </div>
+    <div class="menu-item" onclick="toggleSubmenu('submenu5', this)">5. Salidas No Conformes <i class="bi bi-chevron-right"></i></div>
+    <div class="submenu" id="submenu5"><a href="#" target="_blank">📄 Documento 1</a></div>
 
-    <div class="menu-item" onclick="toggleSubmenu('submenu6', this)">
-        6. Mapa de Riesgos <i class="bi bi-chevron-right"></i>
-    </div>
-    <div class="submenu" id="submenu6">
-        <a href="#" target="_blank">📄 Documento 1</a>
-    </div>
+    <div class="menu-item" onclick="toggleSubmenu('submenu6', this)">6. Mapa de Riesgos <i class="bi bi-chevron-right"></i></div>
+    <div class="submenu" id="submenu6"><a href="#" target="_blank">📄 Documento 1</a></div>
 
-    <div class="menu-item" onclick="toggleSubmenu('submenu7', this)">
-        7. Indicadores <i class="bi bi-chevron-right"></i>
-    </div>
-    <div class="submenu" id="submenu7">
-        <a href="#" target="_blank">📄 Documento 1</a>
-    </div>
+    <div class="menu-item" onclick="toggleSubmenu('submenu7', this)">7. Indicadores <i class="bi bi-chevron-right"></i></div>
+    <div class="submenu" id="submenu7"><a href="#" target="_blank">📄 Documento 1</a></div>
 
-    <div class="menu-item" onclick="toggleSubmenu('submenu8', this)">
-        8. Plan de Acción <i class="bi bi-chevron-right"></i>
-    </div>
-    <div class="submenu" id="submenu8">
-        <a href="#" target="_blank">📄 Documento 1</a>
-    </div>
+    <div class="menu-item" onclick="toggleSubmenu('submenu8', this)">8. Plan de Acción <i class="bi bi-chevron-right"></i></div>
+    <div class="submenu" id="submenu8"><a href="#" target="_blank">📄 Documento 1</a></div>
 
-    <div class="menu-item" onclick="toggleSubmenu('submenu9', this)">
-        9. Plan Padrino <i class="bi bi-chevron-right"></i>
-    </div>
-    <div class="submenu" id="submenu9">
-        <a href="#" target="_blank">📄 Documento 1</a>
-    </div>
+    <div class="menu-item" onclick="toggleSubmenu('submenu9', this)">9. Plan Padrino <i class="bi bi-chevron-right"></i></div>
+    <div class="submenu" id="submenu9"><a href="#" target="_blank">📄 Documento 1</a></div>
 
-    <div class="menu-item" onclick="toggleSubmenu('submenu10', this)">
-        10. Formatos Actualizados - Norma ISO 9001 2015 <i class="bi bi-chevron-right"></i>
-    </div>
-    <div class="submenu" id="submenu10">
-        <a href="#" target="_blank">📄 Documento 1</a>
-    </div>
+    <div class="menu-item" onclick="toggleSubmenu('submenu10', this)">10. Formatos Actualizados - Norma ISO 9001 2015 <i class="bi bi-chevron-right"></i></div>
+    <div class="submenu" id="submenu10"><a href="#" target="_blank">📄 Documento 1</a></div>
 
-    <div class="menu-item" onclick="toggleSubmenu('submenu11', this)">
-        11. Revisión por la Alta Dirección <i class="bi bi-chevron-right"></i>
-    </div>
-    <div class="submenu" id="submenu11">
-        <a href="#" target="_blank">📄 Documento 1</a>
-    </div>
+    <div class="menu-item" onclick="toggleSubmenu('submenu11', this)">11. Revisión por la Alta Dirección <i class="bi bi-chevron-right"></i></div>
+    <div class="submenu" id="submenu11"><a href="#" target="_blank">📄 Documento 1</a></div>
 
-    <div class="menu-item" onclick="toggleSubmenu('submenu12', this)">
-        12. Formato y Procedimientos Acciones de Mejora <i class="bi bi-chevron-right"></i>
-    </div>
-    <div class="submenu" id="submenu12">
-        <a href="#" target="_blank">📄 Documento 1</a>
-    </div>
+    <div class="menu-item" onclick="toggleSubmenu('submenu12', this)">12. Formato y Procedimientos Acciones de Mejora <i class="bi bi-chevron-right"></i></div>
+    <div class="submenu" id="submenu12"><a href="#" target="_blank">📄 Documento 1</a></div>
 
-    <div class="menu-item" onclick="toggleSubmenu('submenu13', this)">
-        13. Matriz de Comunicaciones <i class="bi bi-chevron-right"></i>
-    </div>
-    <div class="submenu" id="submenu13">
-        <a href="#" target="_blank">📄 Documento 1</a>
-    </div>
+    <div class="menu-item" onclick="toggleSubmenu('submenu13', this)">13. Matriz de Comunicaciones <i class="bi bi-chevron-right"></i></div>
+    <div class="submenu" id="submenu13"><a href="#" target="_blank">📄 Documento 1</a></div>
 
-    <div class="menu-item" onclick="toggleSubmenu('submenu14', this)">
-        14. Lista de Chequeo NTC 6256 <i class="bi bi-chevron-right"></i>
-    </div>
-    <div class="submenu" id="submenu14">
-        <a href="#" target="_blank">📄 Documento 1</a>
-    </div>
+    <div class="menu-item" onclick="toggleSubmenu('submenu14', this)">14. Lista de Chequeo NTC 6256 <i class="bi bi-chevron-right"></i></div>
+    <div class="submenu" id="submenu14"><a href="#" target="_blank">📄 Documento 1</a></div>
 
-    <div class="menu-item" onclick="toggleSubmenu('submenu15', this)">
-        15. Gestión de Auditorías <i class="bi bi-chevron-right"></i>
-    </div>
-    <div class="submenu" id="submenu15">
-        <a href="#" target="_blank">📄 Documento 1</a>
-    </div>
+    <div class="menu-item" onclick="toggleSubmenu('submenu15', this)">15. Gestión de Auditorías <i class="bi bi-chevron-right"></i></div>
+    <div class="submenu" id="submenu15"><a href="#" target="_blank">📄 Documento 1</a></div>
 
-    <div class="menu-item" onclick="toggleSubmenu('submenu16', this)">
-        16. Acuerdos y Circulares Digitalización <i class="bi bi-chevron-right"></i>
-    </div>
-    <div class="submenu" id="submenu16">
-        <a href="#" target="_blank">📄 Documento 1</a>
-    </div>
+    <div class="menu-item" onclick="toggleSubmenu('submenu16', this)">16. Acuerdos y Circulares Digitalización <i class="bi bi-chevron-right"></i></div>
+    <div class="submenu" id="submenu16"><a href="#" target="_blank">📄 Documento 1</a></div>
 
-    <div class="menu-item" onclick="toggleSubmenu('submenu17', this)">
-        17. Material de Estudio <i class="bi bi-chevron-right"></i>
-    </div>
-    <div class="submenu" id="submenu17">
-        <a href="#" target="_blank">📄 Documento 1</a>
+    <div class="menu-item" onclick="toggleSubmenu('submenu17', this)">17. Material de Estudio <i class="bi bi-chevron-right"></i></div>
+    <div class="submenu" id="submenu17"><a href="#" target="_blank">📄 Documento 1</a></div>
+
+</div>
+
+<!-- Contenido principal dentro de un div que reemplazamos -->
+<div id="contenidoPrincipal" class="container-fluid mt-4">
+
+    <img src="calidad.png"
+         alt="Justicia" class="img-fluid rounded shadow mb-4" style="max-width: 300px;">
+
+    <h2 class="text-primary mb-3">Calidad Judicial al Servicio de la Comunidad</h2>
+
+    <div style="text-align: justify; font-size: 1.1em; color: #333;">
+        <p>
+            En el <strong>Centro de Servicios de Control de Garantías de Buga</strong>, la calidad no es un objetivo, es un compromiso constante con la justicia y con cada ciudadano que confía en nuestro sistema judicial.
+        </p>
+        <p>
+            Como parte activa de la <strong>Rama Judicial Colombiana</strong>, trabajamos incansablemente para garantizar procesos ágiles, servicios oportunos y atención humana, respaldados por una gestión de calidad certificada y una cultura de mejora continua.
+        </p>
     </div>
 
 </div>
 
-<!-- Contenido principal -->
-<div class="container mt-4">
-    <h2>Bienvenido al portal CSSPA BUGA</h2>
-    <p>Seleccione un documento en el menú lateral para abrirlo en una nueva pestaña.</p>
-</div>
-
-<!-- Script para mostrar/ocultar submenus con flechita dinámica -->
+<!-- Script JS -->
 <script>
     function toggleSubmenu(id, element) {
         var submenu = document.getElementById(id);
@@ -210,8 +159,13 @@
             icon.classList.add("bi-chevron-down");
         }
     }
+
+    function mostrarDocumento(url) {
+        document.getElementById('contenidoPrincipal').innerHTML = `
+            <iframe src="${url}" style="width: 100%; height: 95vh; border: none; padding: 0; margin: 0;"></iframe>
+        `;
+    }
 </script>
 
 </body>
 </html>
-
